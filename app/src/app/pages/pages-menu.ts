@@ -8,8 +8,14 @@ export const MENU_ITEMS: NbMenuItem[] = [
     home: true,
   },
   {
-    title: 'FEATURES',
-    group: true,
+    title: 'Users Management',
+    icon: 'nb-tables',
+    children: [
+      {
+        title: 'Users List',
+        link: '/pages/users/users-list',
+      },
+    ],
   },
   {
     title: 'Auth',

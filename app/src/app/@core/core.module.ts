@@ -44,6 +44,9 @@ const NB_CORE_PROVIDERS = [
             endpoint: '/auth/sign-out',
             method: 'post',
           },
+          token: {
+            key: 'authKey', // this parameter tells Nebular where to look for the token
+          },
         },
       },
     },

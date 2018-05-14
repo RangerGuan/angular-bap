@@ -16,6 +16,7 @@ import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NB_AUTH_TOKEN_CLASS, NbAuthJWTToken } from '@nebular/auth';
 import { AuthGuard } from './auth-guard.service';
+import { UsersListService } from './@core/data/users-list.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -31,7 +32,7 @@ import { AuthGuard } from './auth-guard.service';
   ],
   bootstrap: [AppComponent],
   providers: [
-    { provide: NB_AUTH_TOKEN_CLASS, useValue: NbAuthJWTToken }, AuthGuard
+    { provide: NB_AUTH_TOKEN_CLASS, useValue: NbAuthJWTToken }, AuthGuard, UsersListService,
   ],
 })
 export class AppModule {
